@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "lib/server.js",
+            "use": "@now/node-server"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/v1/test",
+            "dest": "lib/server.js",
+            "methods": [
+                "GET"
+            ]
+        },
+        {
+            "src": "/api/v1/user",
+            "dest": "lib/server.js",
+            "methods": [
+                "GET"
+            ]
+        }
+    ]
+}
